@@ -1,0 +1,163 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+    </package>
+    <!--Configuracion para que paquete controller Home. -->
+    <package name="controller" namespace="/" extends="struts-default">
+
+          <action name="reportPS" class="controller.C_List" method="ListReportPS">
+            <result name="">/Views/PlanetarySystemReport.jsp</result>
+            <result name="input">/Views/PlanetarySystemReport.jsp</result>            
+            <result name="none">/Views/PlanetarySystemReport.jsp</result>
+      </action>    
+        
+        
+        
+      <action name="Home" class="controller.C_Home" method="">
+            <result name="">/Views/Home.jsp</result>
+            <result name="none">/Views/Home.jsp</result>                    
+      </action> 
+      
+      <action name="PlanetarySystem" class="controller.C_List" method="ListPS">
+            <result name="">/Views/PlanetarySystem.jsp</result>    
+      </action>  
+        
+      <action name="regPS" class="controller.C_PlanetarySystem" method="insert">
+            <result name="">/Views/PlanetarySystem.jsp</result>
+            <result name="input">/Views/PlanetarySystem.jsp</result>                                           
+            <result name="none">/Views/Home.jsp</result>       
+      </action>   
+            
+      <action name="updPS" class="controller.C_PlanetarySystem" method="update">
+            <result name="">/Views/PlanetarySystem.jsp</result>
+            <result name="input">/Views/PlanetarySystem.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+      </action>
+      <action name="dltPS" class="controller.C_PlanetarySystem" method="delete">
+            <result name="">/Views/PlanetarySystem.jsp</result>
+            <result name="input">/Views/PlanetarySystem.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+      </action> 
+      
+      <action name="Planet" class="controller.C_List" method="ListPlanet">
+            <result name="">/Views/Planet.jsp</result>
+            <result name="input">/Views/Planet.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+      </action> 
+      
+       <action name="regPlanet" class="controller.C_Planet" method="">
+            <result name="">/Views/Planet.jsp</result>
+            <result name="input">/Views/Planet.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+        </action>
+       <action name="updPlanet" class="controller.C_Planet" method="update">
+            <result name="">/Views/Planet.jsp</result>
+            <result name="input">/Views/Planet.jsp</result>
+            <result name="none">/Views/Planet.jsp</result>
+            
+        </action> 
+        
+       <action name="dltPlanet" class="controller.C_Planet" method="delete">
+            <result name="">/Views/Planet.jsp</result>
+            <result name="input">/Views/Planet.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+        </action>
+        
+       <action name="Star" class="controller.C_List" method="ListStar">
+            <result name="">/Views/Star.jsp</result>
+            <result name="input">/Views/Planet.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+        </action> 
+       <action name="regStar" class="controller.C_Star" method="">
+            <result name="">/Views/Star.jsp</result>
+            <result name="input">/Views/Star.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+        </action>
+       <action name="updStar" class="controller.C_Star" method="update">
+            <result name="">/Views/Star.jsp</result>
+            <result name="input">/Views/Star.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+        </action> 
+       <action name="dltStar" class="controller.C_Star" method="delete">
+            <result name="">/Views/Star.jsp</result>
+            <result name="input">/Views/Star.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+
+       </action>
+       <action name="Satelite" class="controller.C_List" method="ListSatelite">
+            <result name="">/Views/Satelite.jsp</result>
+            <result name="input">/Views/Satelite.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+
+       </action>                                                                                                       
+       <action name="regSatelite" class="controller.C_Satelite" method="">
+            <result name="">/Views/Satelite.jsp</result>
+            <result name="input">/Views/Satelite.jsp</result>
+            <result name="none">/Views/Satelite.jsp</result>           
+       </action> 
+       <action name="updSatelite" class="controller.C_Satelite" method="update">
+            <result name="">/Views/Satelite.jsp</result>
+            <result name="input">/Views/Satelite.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+       </action> 
+        <action name="dltSatelite" class="controller.C_Satelite" method="delete">
+            <result name="">/Views/Satelite.jsp</result>
+            <result name="input">/Views/Satelite.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+
+       </action>  
+         <action name="CelestialBody" class="controller.C_List" method="ListCB">
+            <result name="">/Views/CelestialBody.jsp</result>
+            <result name="input">/Views/CelestialBody.jsp</result>
+            <result name="none">/Views/CelestialBody.jsp</result>
+            
+       </action>
+       <action name="regCB" class="controller.C_CelestialBody" method="">
+            <result name="">/Views/CelestialBody.jsp</result>
+            <result name="input">/Views/CelestialBody.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+       </action>
+       <action name="updCB" class="controller.C_CelestialBody" method="update">
+            <result name="">/Views/CelestialBody.jsp</result>
+            <result name="input">/Views/CelestialBody.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+       </action> 
+       <action name="dltCB" class="controller.C_CelestialBody" method="delete">
+            <result name="">/Views/CelestialBody.jsp</result>
+            <result name="input">/Views/CelestialBody.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+            
+       </action>              
+        <action name="CelestialBodyType" class="controller.C_List" method="ListCBT">
+            <result name="">/Views/CelestialBodyType.jsp</result>
+            <result name="input">/Views/CelestialBodyType.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+       </action>
+        <action name="regCBT" class="controller.C_CelestialBodyType" method="">
+            <result name="">/Views/CelestialBodyType.jsp</result>
+            <result name="input">/Views/CelestialBodyType.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+       </action>
+        <action name="updCBT" class="controller.C_CelestialBodyType" method="update">
+            <result name="">/Views/CelestialBodyType.jsp</result>
+            <result name="input">/Views/CelestialBodyType.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+        </action>
+        <action name="dltCBT" class="controller.C_CelestialBodyType" method="delete">
+            <result name="">/Views/CelestialBodyType.jsp</result>
+            <result name="input">/Views/CelestialBodyType.jsp</result>
+            <result name="none">/Views/Home.jsp</result>       
+        </action>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    </package>
+    
+</struts>
